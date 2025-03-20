@@ -56,7 +56,7 @@ palavras_mais_comuns = contagem.most_common(10)
 palavras, frequencias = zip(*palavras_mais_comuns)
 
 plt.figure(figsize=(10, 5))
-plt.bar(palavras, frequencias, color='pink')
+plt.bar(palavras, frequencias, color='green')
 plt.title("frequencia das palavras mais comuns", fontsize=16)
 plt.xlabel("palavras", fontsize=12)
 plt.ylabel("frequencia", fontsize=12)

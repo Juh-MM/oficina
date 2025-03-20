@@ -20,7 +20,7 @@ with open ("caminho/do/arquivo", 'r', encoding="utf8") as item:
 
 new_stopwords = stopwords.union(novas_palavras)
 
-workcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
+workcloud = WordCloud(width=800, height=400, background_color='white', stopwords=new_stopwords).generate(text)
 
 plt.figure(figsize=(10, 5))
 plt.imshow(workcloud, interpolation='bilinear')
